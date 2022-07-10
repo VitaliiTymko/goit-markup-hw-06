@@ -867,7 +867,7 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-
+  opacity: 1;
   transform: translate(-50%, -50%) scale(1);
 
   transition: transform var(--anim);
@@ -889,7 +889,18 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--white-color);
   cursor: pointer;
+  fill: var(--span-logo-color);
 }
+
+/*--------Начало 6 дЗ-------------*/
+
+.modal-close-btn:focus .icon-close,
+.modal-close-btn:hover .icon-close {
+ fill: var(--secondary-txt-color);
+}
+
+
+/*---------------------*/
 
 .modal-form {
   width: 528px;
