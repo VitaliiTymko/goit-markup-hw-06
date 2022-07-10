@@ -562,18 +562,14 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <form class="modal-form">
+  
+        <!-------Начало ДЗ 6--------->
+        <form class="modal-form" autocomplete="on">
           <p class="form-text">Оставьте свои данные, мы вам перезвоним</p>
           <div class="form-field">
             <label for="name">Имя</label>
             <div class="form-input-icon">
-              <input
-                class="form-input"
-                type="text"
-                name="name"
-                id="name"
-                autofocus
-              />
+              <input class="form-input" type="text" name="name" id="name" required autofocus />
               <svg class="form-icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
@@ -582,7 +578,7 @@
           <div class="form-field">
             <label for="tel">Телефон</label>
             <div class="form-input-icon">
-              <input class="form-input" type="tel" name="tel" id="tel" />
+              <input class="form-input" type="tel" name="tel" id="tel" required />
               <svg class="form-icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
@@ -591,7 +587,7 @@
           <div class="form-field">
             <label for="email">Почта</label>
             <div class="form-input-icon">
-              <input class="form-input" type="email" name="email" id="email" />
+              <input class="form-input" type="email" name="email" id="email" required />
               <svg class="form-icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
@@ -599,23 +595,23 @@
           </div>
           <div class="form-comment">
             <label for="comment">Комментарий</label>
-            <textarea
-              name="comment"
-              id="comment"
-              rows="10"
-              width: 448px height:120px
-              placeholder="Введите текст"
-            ></textarea>
+            <textarea class="comment-input" name="comment" id="comment" rows="10" width: 448px height:120px
+              placeholder="Введите текст"></textarea>
           </div>
-          <div class="checkbox">
-            <label class="check-agry" for="agry">
-              <input type="checkbox" name="agry" class="visually-hidden" />
-              <span class="check-icon"></span>
-              Соглашаюсь с рассылкой и принимаю
-              <a class="check-agry-link" href=""> Условия договора</a>
-            </label>
-          </div>
-          <button class="btn-agry" type="submit" disabled>Отправить</button>
+  
+          <label class="check-agry">
+            <input class="check-input visually-hidden" type="checkbox" name="agry"/>
+            <span class="check-icon">
+              <svg class="form-agry" width="16" height="15">
+                <use href="./images/icons.svg#icon-v"></use>
+              </svg>
+            </span>
+            Соглашаюсь с рассылкой и принимаю
+            <a class="check-agry-link" href=""> Условия договора</a>
+          </label>
+  
+          <button class="btn-agry" type="submit">Отправить</button>       
+  
         </form>
       </div>
     </div>
